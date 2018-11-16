@@ -255,7 +255,7 @@ Hard
 See if you can finish this
 [challenge script](resources/challenge.py) to look like this:
 
-![Challenge photo](resources/challenge.JPG)
+![Challenge photo](resources/challenge.jpg)
 
 
 [Visit me online.](http://www.mikeverdicchio.me)
