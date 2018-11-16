@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+    <meta name="author" content="Mike Verdicchio">
+    <meta name="dcterms.date" content="2018-08-22">
+    <title>Hit the Ground Running with Coding</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <style type="text/css">
+        code {
+            white-space: pre;
+        }
+    </style>
+    <style type="text/css">
+        div.sourceCode {
+            overflow-x: auto;
+        }
+
+        table.sourceCode,
+        tr.sourceCode,
+        td.lineNumbers,
+        td.sourceCode {
+            margin: 0;
+            padding: 0;
+            vertical-align: baseline;
+            border: none;
+        }
+
+        table.sourceCode {
+            width: 100%;
+            line-height: 100%;
+        }
+
+        td.lineNumbers {
+            text-align: right;
+            padding-right: 4px;
+            padding-left: 4px;
+            color: #aaaaaa;
+            border-right: 1px solid #aaaaaa;
+        }
+
+        td.sourceCode {
+            padding-left: 5px;
+        }
+
+        code>span.kw {
+            color: #007020;
+            font-weight: bold;
+        }
+
+        /* Keyword */
+        code>span.dt {
+            color: #902000;
+        }
+
+        /* DataType */
+        code>span.dv {
+            color: #40a070;
+        }
+
+        /* DecVal */
+        code>span.bn {
+            color: #40a070;
+        }
+
+        /* BaseN */
+        code>span.fl {
+            color: #40a070;
+        }
+
+        /* Float */
+        code>span.ch {
+            color: #4070a0;
+        }
+
+        /* Char */
+        code>span.st {
+            color: #4070a0;
+        }
+
+        /* String */
+        code>span.co {
+            color: #60a0b0;
+            font-style: italic;
+        }
+
+        /* Comment */
+        code>span.ot {
+            color: #007020;
+        }
+
+        /* Other */
+        code>span.al {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        /* Alert */
+        code>span.fu {
+            color: #06287e;
+        }
+
+        /* Function */
+        code>span.er {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        /* Error */
+        code>span.wa {
+            color: #60a0b0;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Warning */
+        code>span.cn {
+            color: #880000;
+        }
+
+        /* Constant */
+        code>span.sc {
+            color: #4070a0;
+        }
+
+        /* SpecialChar */
+        code>span.vs {
+            color: #4070a0;
+        }
+
+        /* VerbatimString */
+        code>span.ss {
+            color: #bb6688;
+        }
+
+        /* SpecialString */
+        code>span.im {}
+
+        /* Import */
+        code>span.va {
+            color: #19177c;
+        }
+
+        /* Variable */
+        code>span.cf {
+            color: #007020;
+            font-weight: bold;
+        }
+
+        /* ControlFlow */
+        code>span.op {
+            color: #666666;
+        }
+
+        /* Operator */
+        code>span.bu {}
+
+        /* BuiltIn */
+        code>span.ex {}
+
+        /* Extension */
+        code>span.pp {
+            color: #bc7a00;
+        }
+
+        /* Preprocessor */
+        code>span.at {
+            color: #7d9029;
+        }
+
+        /* Attribute */
+        code>span.do {
+            color: #ba2121;
+            font-style: italic;
+        }
+
+        /* Documentation */
+        code>span.an {
+            color: #60a0b0;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Annotation */
+        code>span.cv {
+            color: #60a0b0;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* CommentVar */
+        code>span.in {
+            color: #60a0b0;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Information */
+    </style>
+    <link rel="stylesheet" href="reveal.js/css/theme/verdicchio.css" id="theme">
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+    <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <h1 class="title">Hit the Ground Running with Coding</h1>
+                <h2 class="author">Mike Verdicchio</h2>
+                <h3 class="date">August 22, 2018</h3>
+            </section>
+
+            <section>
+                <section id="computer-programming-overview" class="titleslide slide level1">
+                    <h1>Computer Programming Overview</h1>
+                </section>
+                <section id="what-is-computer-programming" class="slide level2">
+                    <h1>What is computer programming?</h1>
+                    <ul>
+                        <li>The craft of writing useful, maintainable, and extensible source code</li>
+                        <li>Computer programs are scripts that are interpreted by the computer to do exactly what the
+                            programmer tells them to do.</li>
+                        <li>Programs are stupid - they can do powerful things, but only because the programmer told
+                            them to do it.</li>
+                    </ul>
+                </section>
+                <section id="what-is-it-used-for" class="slide level2">
+                    <h1>What is it used for?</h1>
+                    <p>Machine learning, Robotics, Computer Vision, Image Processing, Pattern Recognition, Data Mining,
+                        Evolutionary Computation, Knowledge Representation, Natural Language Processing</p>
+                </section>
+                <section id="why-should-you-learn-it" class="slide level2">
+                    <h1>Why should you learn it?</h1>
+                    <ul>
+                        <li>Not everyone who writes code has to be a software developer</li>
+                        <li>Reasons to learn to program:
+                            <ul>
+                                <li>Automate repetitive tasks</li>
+                                <li>Understand how technology functions</li>
+                                <li>Better communicate with developers that you're working with</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section id="what-is-scripting" class="slide level2">
+                    <h1>What is scripting?</h1>
+                    <p>Scripts are programs that are designed for a particular use-case that automate some sort of
+                        task. Scripting is for peole that want to make their lives easier with simple programs.</p>
+                    <ul>
+                        <li>Emailing a collection of users</li>
+                        <li>Analyzing a data file and creating plots</li>
+                        <li>Aggregating individual PowerPoint slides into one presentation</li>
+                        <li>Scrape university website and alert you if classes are cancelled</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section id="introduction-to-python" class="titleslide slide level1">
+                    <h1>Introduction to Python</h1>
+                </section>
+                <section id="today-were-going-to-learn-python." class="slide level2">
+                    <h1>Today, we're going to learn Python.</h1>
+                    <ul>
+                        <li>
+                            <p>Open-source: the source (original code) that composes Python is freely available for
+                                anybody to use and help enhance</p>
+                        </li>
+                        <li>
+                            <p>Interpreted: Implemented code (our programs) are executed without being compiled into
+                                binary (1's and 0's)</p>
+                        </li>
+                        <li>
+                            <p>High-level: The complex computer things, such as memory management, input/ouput, and
+                                task scheduling, are handled for you</p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="why-python-and-not-another" class="slide level2">
+                    <h1>Why Python and not another?</h1>
+                    <ul>
+                        <li>High abstraction</li>
+                        <li>Cross-platform portability</li>
+                        <li>Can be embedded within a larger software system</li>
+                        <li>Largely used: Reddit, Google, YouTube, Pinterest, Instagram</li>
+                    </ul>
+                </section>
+                <section id="python-code-is-very-easy-to-write-compared-to-other-languages." class="slide level2">
+                    <h1>Python code is very easy to write, compared to other languages.</h1>
+                    <figure>
+                        <img src="resources/languages.png" alt="Lanuguages comparison" />
+                        <figcaption>Lanuguages comparison</figcaption>
+                    </figure>
+                </section>
+                <section class="slide level2">
+
+                    <p>For ease, we're going to write python code and execute it on a website online. This way, we
+                        don't have to spend time downloading the program and getting it working, which sometimes can be
+                        tricky depending on your operating system.</p>
+                    <p><a href="https://repl.it/languages/python3">repl.it</a></p>
+                </section>
+                <section class="slide level2">
+
+                    <p>However, you would typically install Python on your own computer, allowing you to write code
+                        offline. I can help everybody get it installed at the end.</p>
+                    <p><a href="https://www.python.org/downloads/">Download Python</a></p>
+                    <p><a href="https://code.visualstudio.com/Download">Download VS Code (a text editor)</a></p>
+                </section>
+                <section class="slide level2">
+
+                    <p>If you want some more practice after this workshop, you can try <a href="https://www.codecademy.com/learn/learn-python">Codecademy</a>,
+                        which is great for learning new languages.</p>
+                </section>
+            </section>
+            <section>
+                <section id="python-syntax" class="titleslide slide level1">
+                    <h1>Python Syntax</h1>
+                </section>
+                <section id="python-notes" class="slide level2">
+                    <h1>Python Notes</h1>
+                    <ol type="1">
+                        <li>
+                            <p>In computers, counting starts at 0. If you want the first item, it's actually the
+                                zero'th item. The n'th item is actually the (n-1)'th item. This is due to how computers
+                                store things in memory. That's getting in the weeds though, so don't worry about why!</p>
+                        </li>
+                        <li>
+                            <p>In Python, indenting is <strong>very</strong> important; it's how the language knows
+                                what line to read next. You'll see an example in future slides.</p>
+                        </li>
+                    </ol>
+                </section>
+                <section id="variables" class="slide level2">
+                    <h1>Variables</h1>
+                    <p>Just like in math, variables are what we use to store values that we want to use later.</p>
+                    <div class="sourceCode">
+                        <pre class="sourceCode python"><code class="sourceCode python">x <span class="op">=</span> <span class="st">&#39;Mike&#39;</span> <span class="co"># Set the variable x to &quot;Mike&quot;</span>
+<span class="bu">print</span>(x) 
+x <span class="op">=</span> <span class="dv">15</span> <span class="co"># Set the variable x to 15</span>
+<span class="bu">print</span>(x)</code></pre>
+                    </div>
+                    <p>Data typing in Python is dynamic, so the computer determines what kind of variable you need for
+                        you. It doesn't matter if it's a number, a string of letters, or a duck.</p>
+                </section>
+                <section id="tuples" class="slide level2">
+                    <h1>Tuples</h1>
+                    <p>A tuple is a collection of items which has a specific order and cannot change.</p>
+                    <div class="sourceCode">
+                        <pre class="sourceCode python"><code class="sourceCode python">person <span class="op">=</span> (<span class="st">&#39;Mike&#39;</span>, <span class="dv">23</span>)
+
+<span class="bu">print</span>(person)
+<span class="bu">print</span>(person[<span class="dv">0</span>])
+<span class="bu">print</span>(person[<span class="dv">1</span>])
+
+person[<span class="dv">0</span>] <span class="op">=</span> <span class="st">&#39;Adam&#39;</span> <span class="co"># This line will throw an error (cannot change tuples)</span></code></pre>
+                    </div>
+                </section>
+                <section id="lists" class="slide level2">
+                    <h1>Lists</h1>
+                    <p>A list is a collection which is ordered and changeable</p>
+                    <div class="sourceCode">
+                        <pre class="sourceCode python"><code class="sourceCode python">this_list <span class="op">=</span> [<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;c&#39;</span>, <span class="st">&#39;d&#39;</span>]
+<span class="bu">print</span>(this_list)
+
+this_list[<span class="dv">0</span>] <span class="op">=</span> <span class="st">&#39;z&#39;</span>
+<span class="bu">print</span>(this_list)</code></pre>
+                    </div>
+                </section>
+                <section id="dictionaries" class="slide level2">
+                    <h1>Dictionaries</h1>
+                    <p>A dictionary is a collection of items that is indexed. That means that each item is a key, value
+                        pair.</p>
+                    <div class="sourceCode">
+                        <pre class="sourceCode python"><code class="sourceCode python">person <span class="op">=</span> {
+    <span class="st">&#39;name&#39;</span>: <span class="st">&#39;Mike&#39;</span>,
+    <span class="co">&#39;age&#39;</span>: <span class="dv">23</span>,
+    <span class="co">&#39;state&#39;</span>: <span class="st">&#39;Virginia&#39;</span>
+}
+<span class="bu">print</span>(person)
+
+person[<span class="st">&#39;state&#39;</span>] <span class="op">=</span> <span class="st">&#39;Indiana&#39;</span>
+<span class="bu">print</span>(person)</code></pre>
+                    </div>
+                </section>
+                <section id="conditionals" class="slide level2">
+                    <h1>Conditionals</h1>
+                    <p>Conditionals statements are used when you only want code to execute in a particular scenario.
+                        This is where indenting starts to be very important!</p>
+                    <p>For example: I want to check if a number is even or odd.</p>
+                    <div class="sourceCode">
+                        <pre class="sourceCode python"><code class="sourceCode python">number <span class="op">=</span> <span class="dv">5</span>
+
+<span class="co"># % means modulus, which means divide and save the remainder</span>
+<span class="cf">if</span> number <span class="op">%</span> <span class="dv">2</span> <span class="op">!=</span> <span class="dv">0</span>:
+    <span class="bu">print</span>(x, <span class="st">&#39;is an odd number!&#39;</span>)
+
+<span class="cf">else</span>:
+    <span class="bu">print</span>(x, <span class="st">&#39;is an even number!&#39;</span>)</code></pre>
+                    </div>
+                </section>
+                <section id="iterations-loops" class="slide level2">
+                    <h1>Iterations (loops)</h1>
+                    <p>It's often helpful to do the same thing over and over again for a set of inputs. For example, if
+                        I wanted to add the numbers 0-10 together, I could do the following (inefficiently, of course):</p>
+                    <div class="sourceCode">
+                        <pre class="sourceCode python"><code class="sourceCode python">numbers <span class="op">=</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">10</span>)
+<span class="bu">sum</span> <span class="op">=</span> <span class="dv">0</span>
+
+<span class="co"># Read the following as: for every num in the list called numbers, update the sum</span>
+<span class="cf">for</span> num <span class="op">in</span> numbers:
+    <span class="bu">sum</span> <span class="op">+=</span> num <span class="co"># += means add to the running total</span>
+
+<span class="bu">print</span>(<span class="st">&#39;sum =&#39;</span>, <span class="bu">sum</span>)</code></pre>
+                    </div>
+                </section>
+                <section id="functions" class="slide level2">
+                    <h1>Functions</h1>
+                    <p>Functions help make segments of code that are reusable. This makes for shorter programs as you
+                        don't have to write the same code over and over again.</p>
+                    <div class="sourceCode">
+                        <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> exp(x, y):
+    <span class="cf">return</span> x <span class="op">**</span> y
+
+<span class="bu">print</span>(<span class="st">&#39;2^1 =&#39;</span>, exp(<span class="dv">2</span>, <span class="dv">1</span>))
+<span class="bu">print</span>(<span class="st">&#39;2^2 =&#39;</span>,exp(<span class="dv">2</span>, <span class="dv">2</span>))
+<span class="bu">print</span>(<span class="st">&#39;2^3 =&#39;</span>,exp(<span class="dv">2</span>, <span class="dv">3</span>))</code></pre>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <section id="example-code" class="titleslide slide level1">
+                    <h1>Example Code</h1>
+                </section>
+                <section id="example-code-1" class="slide level2">
+                    <h1>Example Code</h1>
+                    <p><a href="resources/helloworld.py">Hello, World!</a></p>
+                    <p><a href="resources/numberguess.py">Number Guessing Game</a></p>
+                    <p><a href="resources/freestyle.py">Turtle - Freestyle</a></p>
+                    <p><a href="resources/spiral.py">Turtle - Spiral</a></p>
+                    <p><a href="resources/tree.py">Turtle - Tree</a></p>
+                </section>
+            </section>
+            <section>
+                <section id="activities" class="titleslide slide level1">
+                    <h1>Activities</h1>
+                </section>
+                <section id="easy" class="slide level2">
+                    <h1>Easy</h1>
+                    <p>Change the Number Guess game to display your own messages when the user guesses the wrong
+                        number. Maybe you could tell them whether they are just a little off, really off, or nowhere
+                        close! Also, let them know if they guess a number that isn't in the range (below 0, above 100).</p>
+                </section>
+                <section id="easy-1" class="slide level2">
+                    <h1>Easy</h1>
+                    <p>Change the Number Guess game so that the player only gets 5 tries to guess the number. They
+                        better guess right!</p>
+                </section>
+                <section id="easy-2" class="slide level2">
+                    <h1>Easy</h1>
+                    <p>Create a program that performs very simple calculations of two numbers (add, subtract, multiply,
+                        divide)</p>
+                </section>
+                <section id="medium" class="slide level2">
+                    <h1>Medium</h1>
+                    <p>Use the Turtle package to draw your name.</p>
+                </section>
+                <section id="medium-1" class="slide level2">
+                    <h1>Medium</h1>
+                    <p>Create a program that computes the factorial of a number (or the number of children in a
+                        generation).</p>
+                </section>
+                <section id="hard" class="slide level2">
+                    <h1>Hard</h1>
+                    <p>Get the user to input a bunch of information and then write all the data to a .txt file to save
+                        for later.</p>
+                </section>
+                <section id="hard-1" class="slide level2">
+                    <h1>Hard</h1>
+                    <p>Print all the prime numbers between 1 and X.</p>
+                </section>
+                <section id="hard-2" class="slide level2">
+                    <h1>Hard</h1>
+                    <p>See if you can finish this <a href="resources/challenge.py">challenge script</a> to look like
+                        this:</p>
+                    <figure>
+                        <img src="resources/challenge.JPG" alt="Challenge photo" />
+                        <figcaption>Challenge photo</figcaption>
+                    </figure>
+                </section>
+            </section>
+            <section>
+                <section id="visit-me-online." class="titleslide slide level1">
+                    <h1><a href="http://www.mikeverdicchio.me">Visit me online.</a></h1>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+
+            // Optional reveal.js plugins
+            dependencies: [{
+                    src: 'reveal.js/lib/js/classList.js',
+                    condition: function () {
+                        return !document.body.classList;
+                    }
+                },
+                {
+                    src: 'reveal.js/plugin/zoom-js/zoom.js',
+                    async: true
+                },
+                {
+                    src: 'reveal.js/plugin/notes/notes.js',
+                    async: true
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
