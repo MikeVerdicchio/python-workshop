@@ -186,8 +186,8 @@ def exp(x, y):
     return x ** y
 
 print('2^1 =', exp(2, 1))
-print('2^2 =',exp(2, 2))
-print('2^3 =',exp(2, 3))
+print('2^2 =', exp(2, 2))
+print('2^3 =', exp(2, 3))
 ```
 
 
